@@ -21,7 +21,7 @@ public partial class ViewPass : ContentPage
             {
                 await connection.OpenAsync();
 
-                // 🔐 Get the logged-in user's ID
+                
                 string storedUserId = Preferences.Get("LoggedInUserId", null);
 
                 if (string.IsNullOrEmpty(storedUserId))
@@ -32,7 +32,7 @@ public partial class ViewPass : ContentPage
 
                 int userId = int.Parse(storedUserId);
 
-                // ✅ Query filtered by logged-in user's PasswordId
+    
                 string query = "SELECT PasswordId, Password, Domain FROM StorePass WHERE PasswordId = @UserId";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
