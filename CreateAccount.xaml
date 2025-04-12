@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PassManager.NewPage2"
+             BackgroundColor="#F5F7FA"
+             Title="Create Account"
+             >
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,20" Spacing="15">
+            <Label Text="Create Your KeyPassZF Account"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   TextColor="#2C3E50"
+                   HorizontalOptions="Center"
+                   Margin="0,40,0,0" />
+
+            <Label Text="Securely set up your profile below"
+                   FontSize="16"
+                   TextColor="#7F8C8D"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20" />
+
+            <Entry x:Name="Fname"
+                   Placeholder="First Name"
+                   PlaceholderColor="#95A5A6"
+                   FontSize="16"
+                   WidthRequest="300"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   Margin="0,20,0,0" />
+
+            <Label x:Name="FnameError"
+                   Text="First Name is required"
+                   FontSize="14"
+                   TextColor="#E74C3C"
+                   HorizontalOptions="Center"
+                   IsVisible="False" />
+
+            <Entry x:Name="Lname"
+                   Placeholder="Last Name"
+                   PlaceholderColor="#95A5A6"
+                   FontSize="16"
+                   WidthRequest="300"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   Margin="0,20,0,0" />
+
+            <Label x:Name="LnameError"
+                   Text="Last Name is required"
+                   FontSize="14"
+                   TextColor="#E74C3C"
+                   HorizontalOptions="Center"
+                   IsVisible="False" />
+
+            <Entry x:Name="Email"
+                   Placeholder="Email"
+                   PlaceholderColor="#95A5A6"
+                   FontSize="16"
+                   WidthRequest="300"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   Margin="0,20,0,0" />
+
+            <Label x:Name="EmailError"
+                   Text="Email is required"
+                   FontSize="14"
+                   TextColor="#E74C3C"
+                   HorizontalOptions="Center"
+                   IsVisible="False" />
+
+            <Entry x:Name="Mpassword"
+                   Placeholder="Enter Master Password"
+                   PlaceholderColor="#95A5A6"
+                   FontSize="16"
+                   WidthRequest="300"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   IsPassword="True"
+                   Margin="0,20,0,0" />
+
+            <Label x:Name="MasterError"
+                   Text="Master Password is required"
+                   FontSize="14"
+                   TextColor="#E74C3C"
+                   HorizontalOptions="Center"
+                   IsVisible="False" />
+
+            <Entry x:Name="Mpassword2"
+                   Placeholder="Confirm Master Password"
+                   PlaceholderColor="#95A5A6"
+                   FontSize="16"
+                   WidthRequest="300"
+                   HeightRequest="50"
+                   HorizontalOptions="Center"
+                   BackgroundColor="White"
+                   IsPassword="True"
+                   Margin="0,20,0,0" />
+
+            <Button x:Name="Create1"
+                    Text="Create Account"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    BackgroundColor="#3498DB"
+                    CornerRadius="10"
+                    WidthRequest="300"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    Margin="0,30,0,20"
+                    Clicked="Create2" />
+
+            <Label Text="Join us to secure your digital life."
+                   FontSize="12"
+                   TextColor="#95A5A6"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

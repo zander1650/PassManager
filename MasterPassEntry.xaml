@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PassManager.NewPage1"
+              Title="Login"
+             BackgroundColor="#F5F7FA"
+             >
+
+    <VerticalStackLayout Padding="30,20" Spacing="20">
+        <Label Text="Welcome to KeyPassZF"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="#2C3E50"
+               HorizontalOptions="Center"
+               VerticalOptions="Start"
+               Margin="0,40,0,0" />
+
+
+        <Entry x:Name="Email"
+             Placeholder="Enter Email"
+             PlaceholderColor="#95A5A6"
+             FontSize="16"
+             WidthRequest="300"
+             HeightRequest="50"
+             HorizontalOptions="Center"
+             VerticalOptions="Center"
+             Margin="0,60,0,0"
+             BackgroundColor="White"
+            />
+
+        <Entry x:Name="NameEntry"
+               Placeholder="Enter Master Password"
+               PlaceholderColor="#95A5A6"
+               FontSize="16"
+               WidthRequest="300"
+               HeightRequest="50"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"
+               IsPassword="True"
+               Margin="0,10,0,0"
+               BackgroundColor="White"
+               />
+     
+
+        <Button x:Name="Submit"
+                Text="Submit"
+                FontSize="16"
+                FontAttributes="Bold"
+                TextColor="White"
+                BackgroundColor="#3498DB"
+                CornerRadius="10"
+                WidthRequest="300"
+                HeightRequest="50"
+                HorizontalOptions="Center"
+                Margin="0,20,0,0"
+                Clicked="Clicked" />
+
+        <Label x:Name="OutputLabel"
+               FontSize="16"
+               TextColor="#7F8C8D"
+               HorizontalOptions="Center"
+               Margin="0,20,0,0" />
+
+        <Label Text="Securely access your passwords."
+               FontSize="12"
+               TextColor="#95A5A6"
+               HorizontalOptions="Center"
+               Margin="0,40,0,20" />
+    </VerticalStackLayout>
+</ContentPage>
